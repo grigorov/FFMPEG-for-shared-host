@@ -35,6 +35,12 @@ sh amrwb.sh
 sh facc.sh
 #faad2
 sh faad2.sh
+#libvpx
+sh libvpx.sh
+#yasm
+sh yasm.sh
+#x264
+sh x264.sh
 #ffmpeg
 sh ffmpeg.sh
 if [ -e "$HOME/bin/ffmpeg" ]; then
