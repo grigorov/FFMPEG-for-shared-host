@@ -19,6 +19,5 @@ cd x264-snapshot-20121209-2245
 
 make
 make install
-ldconfig
 echo -e $RED"Installation of $_package ....... Completed"$RESET
 sleep 2

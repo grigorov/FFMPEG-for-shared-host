@@ -18,7 +18,7 @@ tar -xvzf $_package
 cd faad2-2.7
 ./bootstrap
 ./configure --prefix=$HOME  --with-mpeg4ip --enable-shared
-make -j$cpu
+make 
 make install
 
 echo -e $RED"Installation of $_package ....... Completed"$RESET
