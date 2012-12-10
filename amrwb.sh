@@ -16,7 +16,7 @@ curl -O $_DOWNLOAD_URL/$_package
 tar -xvjf $_package
 cd amrwb-10.0.0.0/
 ./configure --prefix=$HOME
-make -j$cpu
+make 
 make install
 
 echo -e $RED"Installation of $_package ....... Completed"$RESET
