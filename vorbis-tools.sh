@@ -18,8 +18,8 @@
 #  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 RED='\033[01;31m'
 RESET='\033[0m'
-_DOWNLOAD_URL='http://downloads.sherin.in/sources'
-_package='vorbis-tools-1.1.1.tar.gz'
+_DOWNLOAD_URL='http://downloads.xiph.org/releases/vorbis'
+_package='vorbis-tools-1.4.0.tar.gz'
 export cpu=`cat "/proc/cpuinfo" | grep "processor"|wc -l`
 clear
 sleep 2
@@ -29,7 +29,7 @@ rm -rf $HOME/src/*
 cd $HOME/src
 curl -O $_DOWNLOAD_URL/$_package
 tar -xvzf $_package
-cd vorbis-tools-1.1.1/
+cd vorbis-tools-1.4.0/
 ./configure --prefix=$HOME
 make -j$cpu
 make install

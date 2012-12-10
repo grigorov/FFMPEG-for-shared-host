@@ -27,6 +27,6 @@ export LIBRARY_PATH=$HOME/lib:/usr/local/lib:$LIBRARY_PATH
 export CPATH=$HOME/include:/usr/local/include:$CPATH
 export TMPDIR=$HOME/tmp
 echo "Exporting Environment Variables ...... done"
-cp -f bashrc.txt $HOME/.bashrc
-cp -f htaccess.txt $HOME/etc/htaccess.conf
+#cp -f bashrc.txt $HOME/.bashrc
+#cp -f htaccess.txt $HOME/etc/htaccess.conf
 

@@ -26,62 +26,10 @@ export TMPDIR=$HOME/tmp
 
 #presetup
 sh presetup.sh
-#autoconf
-sh autoconf.sh
-if [ -e "$HOME/bin/autoconf" ]; then
-	echo " "
-else
-	echo " "
-	echo " "
-	echo -e $RED"	Autoconf  installation Failed :( , please visit the forum"$RESET
-	echo " "
-	echo " "
-	exit
-fi
-#automake
-sh automake.sh
-if [ -e "$HOME/bin/automake" ]; then
-	echo " "
-else
-	echo " "
-	echo " "
-	echo -e $RED"	Automake  installation Failed :( , please visit the forum"$RESET
-	echo " "
-	echo " "
-	exit
-fi
-#libtool
-sh libtool.sh
-if [ -e "$HOME/bin/libtool" ]; then
-	echo " "
-else
-	echo " "
-	echo " "
-	echo -e $RED"	Libtool installation Failed :( , please visit the forum"$RESET
-	echo " "
-	echo " "
-	exit
-fi
-#libiconv
-sh libiconv.sh
 #libpng
 sh libpng.sh
 #libjpeg
 sh libjpeg.sh
-#zlib
-sh zlib.sh
-#libwmf
-sh libwmf.sh
-#freetype
-sh freetype.sh
-#gettext
-sh gettext.sh
-#gd
-sh gd.sh
-#ruby
-sh ruby.sh
-#flvtool2
-sh flvtool2.sh
 #lame
 sh lame.sh
 #codecs
@@ -98,24 +46,10 @@ sh libtheora.sh
 sh amrnb.sh
 #amrwd
 sh amrwb.sh
-#liba52
-sh liba52.sh
 #facc
 sh facc.sh
 #faad2
 sh faad2.sh
-#mplayer
-sh mplayer.sh
-if [ -e "$HOME/bin/mplayer" ]; then
-	echo " "
-else
-	echo " "
-	echo " "
-	echo -e $RED"	Mplayer installation Failed :( , please visit the forum"$RESET
-	echo " "
-	echo " "
-	exit
-fi
 #ffmpeg
 sh ffmpeg.sh
 if [ -e "$HOME/bin/ffmpeg" ]; then
@@ -123,37 +57,11 @@ if [ -e "$HOME/bin/ffmpeg" ]; then
 else
 	echo " "
 	echo " "
-	echo -e $RED"	FFMPEG installation Failed :( , please visit the forum"$RESET
+	echo -e $RED"	FFMPEG installation Failed :( "$RESET
 	echo " "
 	echo " "
 	exit
 fi
-#mplayer -rebuild
-sh mplayer.sh
-if [ -e "$HOME/bin/mplayer" ]; then
-	echo " "
-else
-	echo " "
-	echo " "
-	echo -e $RED"	Mplayer installation Failed :( , please visit the forum"$RESET
-	echo " "
-	echo " "
-	exit
-fi
-#php
-sh php.sh
-if [ -e "$HOME/bin/php-cgi" ]; then
-	echo " "
-else
-	echo " "
-	echo " "
-	echo -e $RED"	PHP installation Failed :( , please visit the forum"$RESET
-	echo " "
-	echo " "
-	exit
-fi
-#ffmpeg-php
-sh ffmpeg-php.sh
 #postinstall
 sh post.sh
 
