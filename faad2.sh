@@ -3,7 +3,7 @@
 
 RED='\033[01;31m'
 RESET='\033[0m'
-_DOWNLOAD_URL='http://downloads.sourceforge.net/faac'
+_DOWNLOAD_URL='http://citylan.dl.sourceforge.net/project/faac/faad2-src/faad2-2.7'
 _package='faad2-2.7.tar.gz'
 export cpu=`cat "/proc/cpuinfo" | grep "processor"|wc -l`
 clear
