@@ -17,7 +17,7 @@ tar -xvzf $_package
 cd libtheora-1.1.1
 ./configure --prefix=$HOME
 
-make -j$cpu
+make
 make install
 
 echo -e $RED"Installation of $_package ....... Completed"$RESET
