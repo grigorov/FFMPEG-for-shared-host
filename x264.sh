@@ -15,10 +15,10 @@ cd $HOME/src
 curl -O $_DOWNLOAD_URL/$_package
 tar -xvjf $_package
 cd x264-snapshot-20121209-2245
-./configure --prefix=$HOME 
+./configure --prefix=$HOME --enable-shared
 
 make
 make install
-
+ldconfig
 echo -e $RED"Installation of $_package ....... Completed"$RESET
 sleep 2
