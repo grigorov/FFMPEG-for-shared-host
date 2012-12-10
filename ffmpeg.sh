@@ -16,10 +16,10 @@ curl -O $_DOWNLOAD_URL/$_package
 tar -xvzf $_package
 cd ffmpeg-1.0.1/
 ./configure --prefix=$HOME --enable-libmp3lame --enable-shared  \
-	--enable-libvorbis  --enable-pthreads \
+	--enable-libvorbis --enable-pthreads \
 	--enable-gpl --enable-libtheora   \
 	--enable-pthreads --extra-cflags=-I$HOME/include  \
-	--extra-ldflags=-L$HOME/lib --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libfdk-aac --enable-libvpx \
+	--extra-ldflags=-L$HOME/lib --enable-libfdk-aac --enable-libvpx \
 	--enable-libx264 --enable-nonfree \
 	--enable-version3
 
