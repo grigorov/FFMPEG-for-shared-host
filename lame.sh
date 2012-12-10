@@ -3,7 +3,7 @@
 
 RED='\033[01;31m'
 RESET='\033[0m'
-_DOWNLOAD_URL='http://downloads.sourceforge.net/lame'
+_DOWNLOAD_URL='http://citylan.dl.sourceforge.net/project/lame/lame/3.99'
 _package='lame-3.99.5.tar.gz'
 export cpu=`cat "/proc/cpuinfo" | grep "processor"|wc -l`
 clear
