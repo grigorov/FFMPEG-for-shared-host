@@ -15,7 +15,7 @@ cd $HOME/src
 rm -rf faad2*
 curl -O $_DOWNLOAD_URL/$_package
 tar -xvzf $_package
-cd faad2/
+cd faad2-2.7
 ./bootstrap
 ./configure --prefix=$HOME  --with-mpeg4ip
 make -j$cpu
