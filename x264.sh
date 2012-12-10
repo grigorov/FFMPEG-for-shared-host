@@ -15,7 +15,7 @@ cd $HOME/src
 curl -O $_DOWNLOAD_URL/$_package
 tar -xvjf $_package
 cd x264-snapshot-20121209-2245
-./configure --prefix=$HOME --enable-static
+./configure --prefix=$HOME 
 
 make
 make install
