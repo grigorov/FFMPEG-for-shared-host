@@ -16,7 +16,7 @@ git clone --depth 1 git://github.com/mstorsjo/fdk-aac.git
 #tar -xvjf $_package
 cd fdk-aac
 autoreconf -fiv
-./configure --prefix=$HOME --disable-shared
+./configure --prefix=$HOME --enable-shared
 
 make 
 make install

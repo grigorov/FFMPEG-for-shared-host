@@ -17,7 +17,7 @@ curl -O $_DOWNLOAD_URL/$_package
 tar -xvzf $_package
 cd faad2-2.7
 ./bootstrap
-./configure --prefix=$HOME  --with-mpeg4ip
+./configure --prefix=$HOME  --with-mpeg4ip --enable-shared
 make -j$cpu
 make install
 

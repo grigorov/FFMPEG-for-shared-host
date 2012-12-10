@@ -15,7 +15,7 @@ cd $HOME/src
 curl -O $_DOWNLOAD_URL/$_package
 tar -xvjf $_package
 cd amrwb-10.0.0.0/
-./configure --prefix=$HOME
+./configure --prefix=$HOME --enable-shared
 make 
 make install
 

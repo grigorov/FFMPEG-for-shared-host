@@ -15,7 +15,7 @@ cd $HOME/src
 curl -O $_DOWNLOAD_URL/$_package
 tar -xvzf $_package
 cd lame-3.99.5
-./configure --prefix=$HOME --enable-mp3x --enable-mp3rtp
+./configure --prefix=$HOME --enable-mp3x --enable-mp3rtp --enable-shared
 make -j$cpu
 make install
 

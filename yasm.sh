@@ -15,7 +15,7 @@ cd $HOME/src
 curl -O $_DOWNLOAD_URL/$_package
 tar -xvzf $_package
 cd yasm-1.2.0
-./configure --prefix=$HOME
+./configure --prefix=$HOME 
 
 make 
 make install
