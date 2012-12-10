@@ -16,7 +16,7 @@ curl -O $_DOWNLOAD_URL/$_package
 tar -xvzf $_package
 cd faac-1.28/
 ./bootstrap
-./configure --prefix=$HOME  --with-mp4v2
+./configure --prefix=$HOME 
 make 
 make install
 
