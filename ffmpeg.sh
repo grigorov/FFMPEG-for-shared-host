@@ -21,7 +21,7 @@ cd ffmpeg-1.0.1/
 	--enable-pthreads --extra-cflags=-I$HOME/include  \
 	--extra-ldflags=-L$HOME/lib --enable-libfdk-aac --enable-libvpx \
 	--enable-libx264 --enable-nonfree \
-	--enable-version3 --enable-libamrnb --enable-libamrwb
+	--enable-version3 
 
 
 make 
