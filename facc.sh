@@ -3,7 +3,7 @@
 
 RED='\033[01;31m'
 RESET='\033[0m'
-_DOWNLOAD_URL='http://downloads.sourceforge.net/faac'
+_DOWNLOAD_URL='ftp://mirror.ovh.net/gentoo-distfiles/distfiles'
 _package='faac-1.28.tar.gz'
 export cpu=`cat "/proc/cpuinfo" | grep "processor"|wc -l`
 clear
