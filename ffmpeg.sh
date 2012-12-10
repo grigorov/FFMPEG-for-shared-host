@@ -20,8 +20,13 @@ cd ffmpeg-1.0.1/
 	--enable-liba52 --enable-libfaac --enable-libfaad --enable-pthreads \
 	--enable-libamr-wb --enable-gpl --enable-libtheora   \
 	--enable-pthreads --extra-cflags=-I$HOME/include  \
-	--extra-ldflags=-L$HOME/lib
-make -j$cpu
+	--extra-ldflags=-L$HOME/lib --enable-libopencore-amrnb --enable-libopencore-amrwb \ 
+	--enable-libfdk-aac --enable-libvpx \
+	--enable-libx264 --enable-nonfree \
+	--enable-version3
+
+
+make 
 make install
 
 echo -e $RED"Installation of $_package ....... Completed"$RESET
